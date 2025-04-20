@@ -14,12 +14,24 @@
 					<h1 class="ml-3 text-xl font-bold text-gray-900">Sass Factory</h1>
 				</div>
 				<nav class="hidden md:flex space-x-8">
-					<a href="#" class="text-gray-600 hover:text-blue-600 font-medium">Home</a>
-					<a href="#" class="text-gray-600 hover:text-blue-600 font-medium">Features</a>
-					<a href="#" class="text-gray-600 hover:text-blue-600 font-medium">About</a>
-					<a href="#" class="text-gray-600 hover:text-blue-600 font-medium">Contact</a>
+					<a href="/" class="text-gray-600 hover:text-blue-600 font-medium" aria-label="Home"
+						>Home</a
+					>
+					<a
+						href="#features"
+						class="text-gray-600 hover:text-blue-600 font-medium"
+						aria-label="Features">Features</a
+					>
+					<a href="#about" class="text-gray-600 hover:text-blue-600 font-medium" aria-label="About"
+						>About</a
+					>
+					<a
+						href="#contact"
+						class="text-gray-600 hover:text-blue-600 font-medium"
+						aria-label="Contact">Contact</a
+					>
 				</nav>
-				<button class="md:hidden text-gray-600">
+				<button class="md:hidden text-gray-600" aria-label="Toggle menu">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						class="h-6 w-6"
@@ -55,12 +67,14 @@
 						class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
 						target="_blank"
 						rel="noopener noreferrer"
+						aria-label="Read SvelteKit Documentation"
 					>
 						Read Documentation
 					</a>
 					<a
-						href="#"
+						href="#features"
 						class="bg-white hover:bg-gray-50 text-blue-600 border border-blue-600 font-medium py-3 px-6 rounded-lg transition-colors"
+						aria-label="Learn more about our features"
 					>
 						Learn More
 					</a>
@@ -70,7 +84,7 @@
 	</section>
 
 	<!-- Features Section -->
-	<section class="py-12 bg-white">
+	<section id="features" class="py-12 bg-white">
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 			<h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Key Features</h2>
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -83,6 +97,7 @@
 							fill="none"
 							viewBox="0 0 24 24"
 							stroke="currentColor"
+							aria-hidden="true"
 						>
 							<path
 								stroke-linecap="round"
@@ -107,6 +122,7 @@
 							fill="none"
 							viewBox="0 0 24 24"
 							stroke="currentColor"
+							aria-hidden="true"
 						>
 							<path
 								stroke-linecap="round"
@@ -132,6 +148,7 @@
 							fill="none"
 							viewBox="0 0 24 24"
 							stroke="currentColor"
+							aria-hidden="true"
 						>
 							<path
 								stroke-linecap="round"
@@ -167,7 +184,11 @@
 					</p>
 				</div>
 				<div class="flex space-x-6">
-					<a href="#" class="text-gray-400 hover:text-white">
+					<a
+						href="https://facebook.com"
+						class="text-gray-400 hover:text-white"
+						aria-label="Facebook"
+					>
 						<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
 							<path
 								fill-rule="evenodd"
@@ -176,14 +197,14 @@
 							/>
 						</svg>
 					</a>
-					<a href="#" class="text-gray-400 hover:text-white">
+					<a href="https://twitter.com" class="text-gray-400 hover:text-white" aria-label="Twitter">
 						<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
 							<path
 								d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
 							/>
 						</svg>
 					</a>
-					<a href="#" class="text-gray-400 hover:text-white">
+					<a href="https://github.com" class="text-gray-400 hover:text-white" aria-label="GitHub">
 						<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
 							<path
 								fill-rule="evenodd"
